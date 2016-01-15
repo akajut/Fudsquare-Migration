@@ -1,11 +1,35 @@
 ---
 layout: default
+title: Fudsquare
 ---
 
 
 
 <div class="row">
-  <div class="col-sm-4">.col-sm-4</div>
-  <div class="col-sm-4 test">.col-sm-4</div>
-  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-12">
+    <h1>Bootstrap Migration Project</h1>
+    <p>
+      The purpose of this project is to demonstrate my skills in the context of taking an existing web page design and migrating it to Twitter's Bootstrap framework.
+    </p>
+    <h2>Finding a Candidate</h2>
+    <p>
+      I located a design that would be suitable for the project. I located this <a href="https://dribbble.com/shots/2430185-Fudsquare-Website">mock up on Dribbble</a> by Muhamad Reza Adityawarman. The problem with the mock up is that it is a flat <abbr title="Portable Network Graphic">PNG</abbr> file so the text is saved on top of the background images. This meant that I would have to fire up Photoshop to rid the backgrounds of the text, or find another way.
+    </p>
+    <h2>Sourcing the Background Files</h2>
+    <p>
+      I did some searching around to try and locate a html version of the mock up in order to:
+    </p>
+    <ol>
+      <li>Confirm that the design is not in Bootstrap. (Copy and pasting someone else's code isn't a sought after skill by most potential employers)</li>
+      <li>Get the background image files.</li>
+    </ol>
+    <p>
+      I checked archive.org with not luck, and after some searching I found it had been <a href="http://archive.is/12F1r">archived at http://archive.is/</a>, so I clicked the "download .zip" link and had all of the images neccessary to proceed to migrating the design to Bootstrap. I also inspected the code with Chrome's developer tools to confirm that it wasn't already in Bootstrap. Below is a screen shot of the archive.is code. I think it was probably mocked up using Bootstrap (Based on the row widths of 970px and left and right margins that are 15px and -15px), but the way that it has been archived has replaced the code with a bunch of span tags and inline css declarations, which you can see below.
+    </p>
+      <img alt="Screen shot of code" src="{{ site.baseurl }}/images/ArchivedCodeScreenshot.png">
+      <h2>Rough Layout</h2>
+      <p>
+        I then created a new project using Jekyll, deleted unneccessary default files that Jekyll generates for a new project, and added the Bootsrap CDN links. I used dummy images useing Placehold.it to quickly work through the rough layout. <a href="rough_layout.html"></a>I ended up with this</a>.
+      </p>
+  </div>
 </div>
