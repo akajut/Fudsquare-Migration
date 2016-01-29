@@ -8,6 +8,12 @@ title: CSSstylesheet
   background-size: cover;
   color:white;
 }
+.sales-rough {
+  background-image: url("http://placehold.it/980x150?text=Tea Service");
+  background-position: center;
+  background-size: cover;
+  color:white;
+}
 .order {
   background-image: url("{{ site.baseurl }}/images/WoodGrain.jpg");
   background-repeat: repeat;
@@ -15,8 +21,22 @@ title: CSSstylesheet
   background-size: 100%;
   color:white;
 }
+.order-rough {
+  background-image: url("http://placehold.it/980x450?text=Wood Texture");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+  color:white;
+}
 .learn {
   background-image: url("{{ site.baseurl }}/images/PersonLaptop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+}
+.learn-rough {
+  background-image: url("http://placehold.it/980x500?text=Person on Computer------------------");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
