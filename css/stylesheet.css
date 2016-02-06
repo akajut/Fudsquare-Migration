@@ -2,6 +2,12 @@
 title: CSSstylesheet
 ---
 
+.sales-dribbble {
+  background-color: #e6e6e6;
+  background-position: center;
+  background-size: cover;
+  color:black;
+}
 .sales {
   background-image: url("{{ site.baseurl }}/images/TeaService.png");
   background-position: center;
@@ -51,6 +57,30 @@ title: CSSstylesheet
 .points div {
   padding-top: 3em;
   padding-bottom: 3em;
+}
+
+footer-links {
+  height: 13em;
+}
+
+.footer-links a {
+  margin: 2em 1em 1em 1em;
+  display: block;
+  float: left;
+}
+
+.bold-links a {
+  color: #464646;
+  font-weight: bold;
+}
+
+.social {
+  color: #a7a7a7;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
 }
 
 a {
