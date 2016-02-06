@@ -1,0 +1,118 @@
+---
+title: CSSstylesheet
+---
+
+.sales-dribbble {
+  background-color: #e6e6e6;
+  background-position: center;
+  background-size: cover;
+  color:black;
+}
+.sales {
+  background-image: url("{{ site.baseurl }}/images/TeaService.png");
+  background-position: center;
+  background-size: cover;
+  color:white;
+}
+.sales-rough {
+  background-image: url("http://placehold.it/980x150?text=Tea Service");
+  background-position: center;
+  background-size: cover;
+  color:white;
+}
+.order {
+  background-image: url("{{ site.baseurl }}/images/WoodGrain.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+  color:white;
+}
+.order-rough {
+  background-image: url("http://placehold.it/980x450?text=Wood Texture");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100%;
+  color:white;
+}
+.learn {
+  background-image: url("{{ site.baseurl }}/images/PersonLaptop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+}
+.learn-rough {
+  background-image: url("http://placehold.it/980x500?text=Person on Computer------------------");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+}
+
+.points {
+  background-color: rgb(2, 144, 90);
+  color:white;
+}
+
+.points div {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+footer-links {
+  height: 13em;
+}
+
+.footer-links a {
+  margin: 2em 1em 1em 1em;
+  display: block;
+  float: left;
+}
+
+.bold-links a {
+  color: #464646;
+  font-weight: bold;
+}
+
+.social {
+  color: #a7a7a7;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+
+a {
+  color: #02905a;
+}
+
+.btn.btn-flat {
+    color: #333333;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #FFFFFF, #ffffff);
+    border-color: #CCCCCC #CCCCCC #CCCCCC;
+}
+.btn.btn-flat:hover {
+    color: #333333;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    border-color: #CCCCCC #CCCCCC #CCCCCC;
+}
+
+.btn.btn-outline {
+    color: #FFF;
+    background-image:none;
+    border-color: #FFFFFF #FFFFFF #FFFFFF;
+    border-width: 3px;
+}
+.btn.btn-outline:hover {
+    color: #333333;
+    background-image:none;
+    border-color: #FFFFFF #FFFFFF #FFFFFF;
+}
+.btn-success, .btn-success:hover {
+  color: #ffffff;
+  background-color: #02905a;
+  border-color: #02774a;
+}
