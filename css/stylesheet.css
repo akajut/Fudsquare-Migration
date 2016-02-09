@@ -8,7 +8,7 @@ title: CSSstylesheet
   background-size: cover;
   color:black;
 }
-.sales {
+.started {
   background-image: url("{{ site.baseurl }}/images/TeaService.png");
   background-position: center;
   background-size: cover;
