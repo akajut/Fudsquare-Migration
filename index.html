@@ -1,48 +1,187 @@
----
-layout: default
-title: Fudsquare
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
-<div class="row">
-  <div class="col-sm-12">
+  <title>Fudsquare</title>
+  <link rel="canonical" href="http://akajut.github.io/Fudsquare-Migration/test.html">
+  <link rel="stylesheet" href="/Fudsquare-Migration/css/main.css">
+  <link rel="stylesheet" href="/Fudsquare-Migration/css/stylesheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="/Fudsquare-Migration/js/fudsquare.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      position: relative;
+    }
+
+    .affix {
+      top: 20px;
+    }
+
+    @media screen and (max-width: 810px) {
+      #section1,
+      #section2,
+      #section3,
+      #section4,
+      #section5 {
+        margin-left: 100px;
+      }
+    }
+
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+      color: black;
+      background-color: #bbb;
+    }
+
+    .nav-pills>li.active>a {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+  <div class="container-fluid" style="background-color:#000; color:#fff;height:200px;">
+
     <h1>Bootstrap Migration Project</h1>
     <p>
       The purpose of this project is to demonstrate my skills in the context of taking an existing web page design and migrating it to Twitter's Bootstrap framework.
     </p>
-    <h2>Finding a Candidate</h2>
-    <p>
-      I located a design that would be suitable for the project. I located this <a href="https://dribbble.com/shots/2430185-Fudsquare-Website">mock up on Dribbble</a> by Muhamad Reza Adityawarman. The problem with the mock up is that it is a flat <abbr title="Portable Network Graphic">PNG</abbr> file so the text is saved on top of the background images. This meant that I would have to fire up Photoshop to rid the backgrounds of the text, or find another way to get the background images.
-    </p>
-    <h2>Sourcing the Background Files</h2>
-    <p>
-      I did some searching around to try and locate a html version of the mock up in order to:
-    </p>
-    <ol>
-      <li>Confirm that the design is not in Bootstrap. (Copy and pasting someone else's code isn't a sought after skill by most potential employers)</li>
-      <li>Get the background image files.</li>
-    </ol>
-    <p>
-      I checked archive.org with not luck, and after some searching I found it had been <a href="http://archive.is/12F1r">archived at http://archive.is/</a>, so I clicked the "download .zip" link and had all of the images neccessary to proceed to migrating the design to Bootstrap. I also inspected the code with Chrome's developer tools to confirm that it wasn't already in Bootstrap. Below is a screen shot of the archive.is code. I think it was probably mocked up using Bootstrap (Based on the row widths of 970px and left and right margins that are 15px and -15px), but the way that it has been archived has replaced the code with a bunch of span tags and inline css declarations, which you can see below.
-    </p>
-      <img alt="Screen shot of code" class="img-responsive" src="{{ site.baseurl }}/images/ArchivedCodeScreenshot.png">
-      <h2>Rough Layout</h2>
-      <p>
-        I then created a new project using Jekyll, deleted unneccessary default files that Jekyll generates for a new project, and added the Bootsrap CDN links. I used dummy images using Placehold.it to quickly work through the rough layout. <a href="rough_layout.html">I ended up with this</a>.
-      </p>
-      <h2>Refining the Rough Layout</h2>
-      <h3>Porting the Web Page Design</h3>
-      <p>
-        The next thing I worked on was adding the images from the archived html mock up to create a responsive bootstrap port of the design. <a href="webpage-port.html">Here is where you can see my progress</a>.
-      </p>
-      <h3>Porting the Dribbble Design</h3>
-      <p>
-        Once I finished the web page port, I made the changes to reflect the final design from Dribbble. <a href="dribbble-port.html">Dribbble Port to Bootstrap</a>.
-      </p>
-      <h2>My Take on Things</h2>
-      <p>
-        <a href="my-take.html">My take on the design</a>.
-      </p>
   </div>
-</div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+          <li><a href="#section1">Find</a></li>
+          <li><a href="#section2">Source</a></li>
+          <li><a href="#section3">Rough</a></li>
+          <li><a href="#section4">Refine</a></li>
+          <li><a href="#section5">My Take</a></li>
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1">
+
+          <h2>Finding a Candidate</h2>
+          <p>
+            I located a design that would be suitable for the project. I located this <a href="https://dribbble.com/shots/2430185-Fudsquare-Website">mock up on Dribbble</a> by Muhamad Reza Adityawarman. The problem with the mock up is that it is a flat
+            <abbr title="Portable Network Graphic">PNG</abbr> file so the text is saved on top of the background images. This meant that I would have to fire up Photoshop to rid the backgrounds of the text, or find another way to get the background images.
+          </p>
+          <a class="btn btn-default" href="https://dribbble.com/shots/2430185-Fudsquare-Website">Original on Dribbble</a>
+        </div>
+        <div id="section2">
+
+
+          <h2>Sourcing the Background Files</h2>
+          <p>
+            I did some searching around to try and locate a html version of the mock up in order to:
+          </p>
+          <ol>
+            <li>Confirm that the design is not in Bootstrap. (Copy and pasting someone else's code isn't a sought after skill by most potential employers)</li>
+            <li>Get the background image files.</li>
+          </ol>
+          <p>
+            I checked archive.org with not luck, and after some searching I found it had been <a href="http://archive.is/12F1r">archived at http://archive.is/</a>, so I clicked the "download .zip" link and had all of the images neccessary to proceed to
+            migrating the design to Bootstrap. I also inspected the code with Chrome's developer tools to confirm that it wasn't already in Bootstrap. Below is a screen shot of the archive.is code. I think it was probably mocked up using Bootstrap (Based
+            on the row widths of 970px and left and right margins that are 15px and -15px), but the way that it has been archived has replaced the code with a bunch of span tags and inline css declarations, which you can see below.
+          </p>
+          <a href="http://akajut.github.io/Fudsquare-Migration/images/ArchivedCodeScreenshot.png">
+            <img alt="Screen shot of code" class="img-responsive" src="http://akajut.github.io/Fudsquare-Migration/images/ArchivedCodeScreenshot.png">
+          </a>
+
+
+        </div>
+        <div id="section3">
+
+          <h2>Rough Layout</h2>
+          <p>
+            I then created a new project using Jekyll, deleted unneccessary default files that Jekyll generates for a new project, and added the Bootsrap CDN links. I used dummy images using Placehold.it to quickly work through the rough layout.
+          </p> <a class="btn btn-default" href="rough_layout.html">Rough Layout</a>
+
+        </div>
+        <div id="section4">
+
+          <div class="row">
+            <h2>Refining the Rough Layout</h2>
+            <div class="col-sm-6">
+              <h3>Porting the Web Page Design</h3>
+              <p>
+                The next thing I worked on was adding the images from the archived html mock up to create a responsive bootstrap port of the design.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h3>Porting the Dribbble Design</h3>
+              <p>
+                Once I finished the web page port, I made the changes to reflect the final design from Dribbble.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <a class="btn btn-default" href="webpage-port.html">HTML Port to Bootstrap</a>.
+            </div>
+            <div class="col-sm-6">
+              <a class="btn btn-default" href="dribbble-port.html">Dribbble Port to Bootstrap</a>
+            </div>
+          </div>
+
+        </div>
+        <div id="section5">
+
+          <h2>My Take on Things</h2>
+          <p>
+            The main changes I made are as follows:
+          </p>
+          <ol>
+            <li>
+              <h4>Changed the Tag Line from business facing to consumer facing.</h4>
+              <p>
+                The original idea for the app was to allow customers to check in to a resturant and order meals from their smartphones. When a customer goes to the web page to download the app they are greated with a tag line "Let The Buyer Be Your Business Marketing"
+                which really speaks to resturant owners. I think that most customers would not download this app just to order food when tradional ordering from wait staff is so easy. Fudsquare needs a more compelling way to entice customers to download
+                the app. I changed the tag line to "Foodies: You've found the app for YOU". The app marketing should be aimed food buffs who want to find, collect, and share the meals that they experience. The original tag line could be used in a "Fudsquare
+                for business" page on the web site, but it is potentially confusing for customers.
+              </p>
+            </li>
+            <li>
+              <h4>Reordered the features explanations to reflect the sequential order of the main use case senario while using the app.</h4>
+              <p>
+                The first change I made for the web page was to move the three glyphicon bullet points up from the middle to just below the splash image. Once a customer lands on the home page it is very important for them to clearly see what the app can do for them.
+                Moving the glyphicons to the top will give them an immediate sense of what the app can do for them with three simple points. The customer can then scroll down the page to get more informative explanations of the features in the sequential
+                order of the main use case senario to reinforce the apps capabilities.
+              </p>
+            </li>
+            <li>
+              <h4>Repaced text links to the app stores with buttons.</h4>
+              <p>
+                Replacing the text links with standard buttons increases the scanability of the page for users who what to download the app immediately.
+              </p>
+            </li>
+          </ol>
+          <p>
+            <a class="btn btn-default" href="my-take.html">My take on the design</a>
+          </p>
+
+        </div>
+        <div class="container-fluid" style="height:200px;">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
