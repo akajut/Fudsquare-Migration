@@ -18,7 +18,6 @@ published: true
   <link rel="stylesheet" href="/Fudsquare-Migration/css/main.css">
   <link rel="stylesheet" href="/Fudsquare-Migration/css/stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="/Fudsquare-Migration/js/fudsquare.js"></script>
 
   {% if jekyll.environment == "production" %}
 
@@ -37,6 +36,7 @@ published: true
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="/Fudsquare-Migration/js/fudsquare.js"></script>
   <style>
     body {
       position: relative;
@@ -53,6 +53,16 @@ published: true
       #section4,
       #section5 {
         margin-left: 100px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      #section1,
+      #section2,
+      #section3,
+      #section4,
+      #section5 {
+        margin-left: 0px;
       }
     }
 
@@ -82,7 +92,7 @@ published: true
 
   <div class="container">
     <div class="row">
-      <nav class="col-sm-3" id="myScrollspy">
+      <nav class="col-sm-3 hidden-xs" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
           <li><a href="#section1">Find</a></li>
           <li><a href="#section2">Source</a></li>
@@ -91,7 +101,7 @@ published: true
           <li><a href="#section5">My Take</a></li>
         </ul>
       </nav>
-      <div class="col-sm-9">
+      <div class="col-sm-9 col-xs-12">
         <div id="section1">
 
           <h2>Finding a Candidate</h2>
